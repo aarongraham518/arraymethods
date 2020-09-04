@@ -95,13 +95,28 @@ const ages = [33,12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 // console.log(agesTimesTwo);
 
 //Square ages array, them mulitiply by 2
-const squareTimesTwo = ages
-.map(age => Math.sqrt(age))
-.map(age => age * 2);
+// const squareTimesTwo = ages
+// .map(age => Math.sqrt(age))
+// .map(age => age * 2);
 
-console.log(squareTimesTwo);
+// console.log(squareTimesTwo);
 
 //sort
+//sort companies by start year (with two params)
+// const sortedCompanies = companies.sort(function(c1, c2){
+//     if(c1.start > c2.start){
+//         return 1;
+//     }else{
+//         return -1;
+//     }
+// });
 
+//arrow function shortener
+// const sortedCompanies = companies.sort((a, b) => (a.start > b.start ? 1 : -1));
+// console.log(sortedCompanies);
+
+//sort ages array from loweset to highest
+// const sortedAges = ages.sort((a, b) => a - b); //a - b for asc, b-a for dsc
+// console.log(sortedAges);
 //reduce
 
