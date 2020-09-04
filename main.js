@@ -62,8 +62,14 @@ const ages = [33,12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 //     }
 // });
 
-const eightiesCompanies = companies.filter(eightComps => (eightComps.start >= 1980) && (eightComps.start <= 1989))
-console.log(eightiesCompanies);
+// const eightiesCompanies = companies.filter(eightComps => (eightComps.start >= 1980) && (eightComps.start <= 1989))
+// console.log(eightiesCompanies);
+
+//Lets get all of the companies that have lasted 10 or more years
+const tenYear = companies.filter(tenYearComp =>
+    ((tenYearComp.end) - (tenYearComp.start) >= 10));
+
+console.log(tenYear);
 //map
 
 //sort
