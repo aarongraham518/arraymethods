@@ -66,11 +66,40 @@ const ages = [33,12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 // console.log(eightiesCompanies);
 
 //Lets get all of the companies that have lasted 10 or more years
-const tenYear = companies.filter(tenYearComp =>
-    ((tenYearComp.end) - (tenYearComp.start) >= 10));
+// const tenYear = companies.filter(tenYearComp =>
+//     ((tenYearComp.end) - (tenYearComp.start) >= 10));
 
-console.log(tenYear);
+// console.log(tenYear);
 //map
+//Grab all of the company names and create own array
+// const companyNames = companies.map(function(company){
+//     return company.name
+// });
+
+// const testMap = companies.map(function(company){
+//     return `${company.name} [${company.start} - ${company.end}]`;
+// });
+
+//shorthand arrow function version
+// const testMap = companies.map(company =>
+//     `${company.name} [${company.start} - ${company.end}]`);
+
+// console.log(testMap);
+
+//get the squareroot of ages
+// const agesSquare = ages.map(age => Math.sqrt(age));
+// console.log(agesSquare);
+
+//ages array times 2
+// const agesTimesTwo = ages.map(age => age * 2);
+// console.log(agesTimesTwo);
+
+//Square ages array, them mulitiply by 2
+const squareTimesTwo = ages
+.map(age => Math.sqrt(age))
+.map(age => age * 2);
+
+console.log(squareTimesTwo);
 
 //sort
 
