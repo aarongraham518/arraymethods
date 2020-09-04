@@ -45,6 +45,25 @@ const ages = [33,12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 // const canDrink = ages.filter(age => age >= 21);
 // console.log(canDrink);
 
+//Filter "retail companies"
+// const retailCompanies = companies.filter(function(retail){
+//     if(retail.category.toLowerCase() === 'retail'){
+//         return true;
+//     }
+// });
+
+// const retailCompanies = companies.filter(retail => retail.category.toLowerCase() === 'retail');
+// console.log(retailCompanies);
+
+//All the companies who have started in the 1980's
+// const eightiesCompanies = companies.filter(function(eightComps){
+//     if((eightComps.start >= 1980) && (eightComps.start <= 1989)){
+//         return true;
+//     }
+// });
+
+const eightiesCompanies = companies.filter(eightComps => (eightComps.start >= 1980) && (eightComps.start <= 1989))
+console.log(eightiesCompanies);
 //map
 
 //sort
